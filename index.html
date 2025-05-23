@@ -8,10 +8,38 @@
   </head>
     <body>
     <a-scene>
-      <a-light id="dir" type="directional"></a-light>
+      <a-light id="dir" type="directional"
+      position="-7.880 10.843 -7.880"
+      intensity="0.75"
+      light="castShadow: true"></a-light>
+      <a-light id="dir" type="directional"
+      position="7.880 10.843 7.880"
+      intensity="0.75"
+      light="castShadow: true"></a-light>
+
+      
+      <a-sound src="river-307903.mp3" autoplay="true" loop="on"
+      position="-8w 1 -11.372"
+      distanceModel: exponential; maxDistance: 50;
+      ></a-sound>
+      <a-sound src="river-307903.mp3" autoplay="true" loop="on"
+      position="8 1 -11.372"
+      distanceModel: exponential; maxDistance: 50;
+      ></a-sound>
+
+
+      <a-light id="spt" type="spot"
+      rotation="270 0 0"
+      position="0 4.081 4.240"></a-light>
+
+      <a-light id="spt" type="spot"
+      rotation="270 0 0"
+      position="-3.070 3.982 11.492"></a-light>
+
+
       <a-sky color="#cdcdcd"></a-sky>
       
-      <a-entity ply-model="src: Abandoned City Project.ply" 
+      <a-entity ply-model="src:Abandoned City with Carpark and Park.ply" 
       position="15.120 -6.563 14.863" 
       rotation="270 90 0" 
       scale="3 3 3"></a-entity>
@@ -60,6 +88,167 @@
       easing: easeInOutQuad;
       dur: 2000;"
       ></a-entity>
+
+      <a-entity
+      ply-model="src:GoodVan.ply"
+      position="-7.860 -2.439 -3.432"
+      rotation="270 0 0"
+      scale="2 2 2"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Car3.ply"
+      position="-9.304 -2.411 -1.682"
+      rotation="270 270 0"
+      scale="2 2 2"
+      ></a-entity>
+
+
+    *Office*
+
+      <a-entity 
+      ply-model="src:Desk broken 1.ply"
+      position="-8.801 0.389 11.687"
+      rotation="270 270 0"
+      scale="0.75 0.75 0.75"
+      ></a-entity>
+      <a-entity 
+      ply-model="src:Desk broken 2.ply"
+      position="-7.459 0.389 11.687"
+      rotation="270 270 0"
+      scale="0.75 0.75 0.75"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Desk broken 4.ply"
+      position="-7.459 0.389 9.639"
+      rotation="270 270 0"
+      scale="0.75 0.75 0.75"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Desk broken 3.ply"
+      position="-7.459 0.389 7.703"
+      rotation="270 270 0"
+      scale="0.75 0.75 0.75"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Desk1.ply"
+      position="-7.459 0.389 6.088"
+      rotation="270 270 0"
+      scale="0.75 0.75 0.75"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Desk1.ply"
+      position="-7.459 0.389 4.839"
+      rotation="270 270 0"
+      scale="0.75 0.75 0.75"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Desk broken 4.ply"
+      position="-9.081 0.389 4.839"
+      rotation="270 270 0"
+      scale="0.75 0.75 0.75"
+      ></a-entity>
+
+
+      *Chairs*
+
+      <a-entity 
+      ply-model="src:Broken Chair 1.ply"
+      position="-7.702 1.475 12.525"
+      rotation="270 90 0"
+      scale="0.25 0.25 0.25"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Broken Chair 1.ply"
+      position="-6.229 1.475 12.525"
+      rotation="270 90 0"
+      scale="0.25 0.25 0.25"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Broken Chair 1.ply"
+      position="-6.229 1.475 10.414"
+      rotation="270 90 0"
+      scale="0.25 0.25 0.25"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Broken Chair 2.ply"
+      position="-6.229 1.475 8.721"
+      rotation="270 90 0"
+      scale="0.25 0.25 0.25"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Broken Chair 2.ply"
+      position="-6.229 1.475 7.026"
+      rotation="270 90 0"
+      scale="0.25 0.25 0.25"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Broken Chair 1.ply"
+      position="-6.229 1.475 5.407"
+      rotation="270 90 0"
+      scale="0.25 0.25 0.25"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Chair.ply"
+      position="-8.210 1.475 5.407"
+      rotation="270 90 0"
+      scale="0.25 0.25 0.25"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Abandoned Apartments.ply"
+      position="5.509 1.475 7.904"
+      rotation="270 270 0"
+      scale="3 3 3"
+      ></a-entity>
+
+
+      <a-entity 
+      ply-model="src:Traffic Light.ply"
+      position="-3.465 1.475 11.480"
+      rotation="270 270 0"
+      scale="1.5 1.5 1.5"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Traffic Light.ply"
+      position="0.366 1.475 4.029"
+      rotation="270 90 0"
+      scale="1.5 1.5 1.5"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Traffic Light.ply"
+      position="-9.493 1.475 -5.942"
+      rotation="270 180 0"
+      scale="1.5 1.5 1.5"
+      ></a-entity>
+
+      <a-entity 
+      ply-model="src:Traffic Light.ply"
+      position="-9.493 1.475 0.894"
+      rotation="270 0 0"
+      scale="1.5 1.5 1.5"
+      ></a-entity>
+      
+      <a-entity 
+      ply-model="src:Traffic Light.ply"
+      position="-3.693 1.475 -4.0189"
+      rotation="270 270 0"
+      scale="1.5 1.5 1.5"
+      ></a-entity>
+
 
     </a-scene>
   </body>
